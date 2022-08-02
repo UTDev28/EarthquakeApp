@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KREarthquakeApp.MainPage">
+
+    <ScrollView>
+        
+    
+        <StackLayout>
+            <Label Text="Kevin's Earthquake App"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FontSize="30"/>
+            <Label Text="Start Date"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FontSize="30"/>
+            <DatePicker x:Name="DatePickerStartDate"
+                        FontSize="20"/>
+            <Label Text="End Date"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FontSize="30"/>
+            <DatePicker x:Name="DatePickerEndDate"
+                        FontSize="20"/>
+            <Label Text="Earthquake Magnitude"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FontSize="30"/>
+            <Entry x:Name="EntMag"
+                   FontSize="20"/>
+            <Button x:Name="BtnFind"
+                    Text="Find"
+                    FontSize="25"
+                    Clicked="BtnFind_Clicked"/>
+            <Label x:Name="LblResults"
+                   Text="Results go here..."
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"/>
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>
